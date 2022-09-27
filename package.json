@@ -1,0 +1,16 @@
+{
+  "name": "alien-carrot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node ."
+  },
+  "author": "sudoCss",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.24.0"
+  }
+}
