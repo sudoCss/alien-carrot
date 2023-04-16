@@ -160,7 +160,11 @@ function update(delta) {
 }
 
 function draw() {
-    console.clear();
+    process.stdout.write(
+        process.platform === "win32"
+            ? "\x1B[2J\x1B[0f"
+            : "\x1B[2J\x1B[3J\x1B[H",
+    );
     switch (gameState) {
         case GAME_IS[WAITING]:
             waitingScreen();
